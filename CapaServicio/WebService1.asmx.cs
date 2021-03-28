@@ -71,8 +71,8 @@ namespace CapaServicio
         [WebMethod(Description = "Listar hospitales")]
         public DataSet ListarHo()
         {
-            Paciente pacientee = new Paciente();
-            return pacientee.Listar();
+            Hospital hospitall = new Hospital();
+            return hospitall.Listar();
         }
 
 
