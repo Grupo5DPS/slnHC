@@ -8,6 +8,6 @@ namespace CapaEntidad
 {
     class PacienteE
     {
-
+        //hasdhaksjd
     }
 }
