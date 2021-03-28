@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaDatos", "CapaDatos\Capa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaNegocio", "CapaNegocio\CapaNegocio.csproj", "{ACD2B7CC-C6A5-4E8A-B009-690FFB68C92F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaEntidad", "CapaEntidad\CapaEntidad.csproj", "{3E40F7D9-0C18-473D-8073-E73210E3BEE8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,10 @@ Global
 		{ACD2B7CC-C6A5-4E8A-B009-690FFB68C92F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACD2B7CC-C6A5-4E8A-B009-690FFB68C92F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACD2B7CC-C6A5-4E8A-B009-690FFB68C92F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E40F7D9-0C18-473D-8073-E73210E3BEE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E40F7D9-0C18-473D-8073-E73210E3BEE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E40F7D9-0C18-473D-8073-E73210E3BEE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E40F7D9-0C18-473D-8073-E73210E3BEE8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +65,7 @@ Global
 		{D4C23BBB-9036-4EC5-81CE-92506302C7F6} = {3B806EF2-7A0B-4B61-9761-E42387CA1768}
 		{8BC87F90-A2B1-45EF-9EC6-3676433EC389} = {6C40EC86-B2EC-48A6-9C8D-84786106AFAE}
 		{ACD2B7CC-C6A5-4E8A-B009-690FFB68C92F} = {6C40EC86-B2EC-48A6-9C8D-84786106AFAE}
+		{3E40F7D9-0C18-473D-8073-E73210E3BEE8} = {6C40EC86-B2EC-48A6-9C8D-84786106AFAE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2B536585-5EF6-49C8-803B-FC16FF28EDE1}

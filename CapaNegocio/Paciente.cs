@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using CapaDatos;
 namespace CapaNegocio
 {
-    public class Escuela : Interfaces.IEscuela
+    public class Paciente : Interfaces.IPaciente
     {
         //llamar a la capa de datos 
         private Datos datos = new DatosSQL();
