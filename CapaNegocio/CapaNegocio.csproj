@@ -42,7 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Historia.cs" />
+    <Compile Include="Hospital.cs" />
     <Compile Include="Interfaces\IHistoria.cs" />
+    <Compile Include="Interfaces\IHospital.cs" />
     <Compile Include="Interfaces\IPaciente.cs" />
     <Compile Include="Paciente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

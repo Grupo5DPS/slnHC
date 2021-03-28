@@ -12,21 +12,46 @@ namespace CapaEntidad
     public class HistoriaE
     {
         [DataMember]
+        public string idH { get; set; }
+
+        [DataMember]
+        public string detalle { get; set; }
+
+        [DataMember]
+        public string dirnroExpediente { get; set; }
+
+        [DataMember]
+        public string Antecedente { get; set; }
+
+        [DataMember]
+        public string peso { get; set; }
+
+        [DataMember]
+        public string talla { get; set; }
+
+        [DataMember]
+        public string motivoConsulta { get; set; }
+
+        [DataMember]
+        public string sintomas { get; set; }
+
+        [DataMember]
+        public string adicciones { get; set; }
+
+        [DataMember]
+        public string procedimiento { get; set; }
+
+        [DataMember]
+        public string idD { get; set; }
+
+        [DataMember]
+        public string idU { get; set; }
+
+        [DataMember]
         public string idHo { get; set; }
 
         [DataMember]
-        public string descripcion { get; set; }
-
-        [DataMember]
-        public string director { get; set; }
-
-        [DataMember]
-        public string direccion { get; set; }
-
-        [DataMember]
-        public string contacto { get; set; }
-
-        [DataMember]
-        public string correo { get; set; }
+        public string fecharegistro { get; set; }
     }
 }
+

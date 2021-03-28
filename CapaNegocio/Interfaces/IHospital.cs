@@ -8,14 +8,12 @@ using CapaEntidad;
 
 namespace CapaNegocio.Interfaces
 {
-    interface IHistoria
+    interface IHospital
     {
         //Declara metodos para una clase (Herencia y polimorfismo)
         DataSet Listar();
-        string[] Agregar(string idH, string detalle, string nroExpediente,
-                      string Antecedente, string peso, string talla, string motivoConsulta,
-                      string sintomas, string adicciones, string procedimiento, string idP,
-                      string idD, string idU, string idHo, string fechaRegistro);
+        string[] Agregar(string idHo, string descricion, string director,
+                      string direccion, string contacto, string correo);
         //string[] Eliminar(HistoriaE historia);
         //string[] Actualizar(HistoriaE historia);
         //DataSet buscar(string texto, string criterio);

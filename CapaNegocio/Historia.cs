@@ -11,6 +11,7 @@ namespace CapaNegocio
 {
     public class Historia : Interfaces.IHistoria
     {
+
         //llamar a la capa de datos 
         private Datos datos = new DatosSQL();
         //Propiedad de solo lectura para el mensaje del PAT
@@ -23,14 +24,16 @@ namespace CapaNegocio
             }
         }
 
-        public string[] Actualizar(HistoriaE historia)
-        {
-            throw new NotImplementedException();
-        }
 
-        public string[] Agregar(string codEscuela, string escuela)
+        public string[] Agregar(string idH, string detalle, string nroExpediente, string Antecedente, 
+                                string peso, string talla, string motivoConsulta, string sintomas, 
+                                string adicciones, string procedimiento, string idP, string idD, 
+                                string idU, string idHo, string fechaRegistro)
         {
-            DataRow fila = datos.TraerDataRow("spAgregarEscuela", codEscuela, escuela);
+            DataRow fila = datos.TraerDataRow("spAgregarHistoria", idH, detalle, nroExpediente, Antecedente,
+                                peso, talla, motivoConsulta, sintomas,
+                                adicciones, procedimiento, idP, idD,
+                                idU, idHo, fechaRegistro);
             //traer el codigo de error y el mensaje
             byte codError = Convert.ToByte(fila["CodError"]);
 
@@ -39,24 +42,10 @@ namespace CapaNegocio
             return aea;
         }
 
-        public string[] Agregar(HistoriaE historia)
-        {
-            throw new NotImplementedException();
-        }
-
-        public DataSet buscar(string texto, string criterio)
-        {
-            throw new NotImplementedException();
-        }
-
-        public string[] Eliminar(HistoriaE historia)
-        {
-            throw new NotImplementedException();
-        }
 
         public DataSet Listar()
         {
-            return datos.TraerDataSet("spListarTPaciente");
+            throw new NotImplementedException();
         }
     }
 }

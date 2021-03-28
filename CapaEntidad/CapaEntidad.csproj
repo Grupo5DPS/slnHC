@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HistoriaE.cs" />
+    <Compile Include="HospitalE.cs" />
     <Compile Include="PacienteE.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
