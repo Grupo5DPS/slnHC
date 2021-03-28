@@ -41,9 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Escuela.cs" />
     <Compile Include="Historia.cs" />
-    <Compile Include="Interfaces\IEscuela.cs" />
     <Compile Include="Interfaces\IHistoria.cs" />
     <Compile Include="Interfaces\IPaciente.cs" />
     <Compile Include="Paciente.cs" />
@@ -53,6 +51,10 @@
     <ProjectReference Include="..\CapaDatos\CapaDatos.csproj">
       <Project>{8bc87f90-a2b1-45ef-9ec6-3676433ec389}</Project>
       <Name>CapaDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaEntidad\CapaEntidad.csproj">
+      <Project>{3e40f7d9-0c18-473d-8073-e73210e3bee8}</Project>
+      <Name>CapaEntidad</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

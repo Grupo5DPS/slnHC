@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Services;
+using CapaEntidad;
 using CapaNegocio;
 using System.Data;
 
@@ -18,41 +19,51 @@ namespace CapaServicio
     // [System.Web.Script.Services.ScriptService]
     public class WebService1 : System.Web.Services.WebService
     {
-        [WebMethod(Description = "Listar escuelas")]
+        //---------------------------------- PACIENTE ------------------------------------------
+
+        [WebMethod(Description = "Listar pacientes")]
         public DataSet Listar()
         {
-            Escuela escuela = new Escuela();
-            return escuela.Listar();
+            Paciente pacientee = new Paciente();
+            return pacientee.Listar();
         }
-
-        [WebMethod(Description = "Listar escuelas")]
+        /*
+        [WebMethod(Description = "Buscar pacientes escuelas")]
         public DataSet Buscar(string texto, string criterio)
         {
             Escuela escuela = new Escuela();
             return escuela.buscar(texto, criterio);
         }
-
+        
         [WebMethod(Description = "Listar escuelas")]
         public string[] Eliminar(string codEscuela)
         {
             Escuela escuela = new Escuela();
             return escuela.Eliminar(codEscuela);
         }
+        */
 
-
-        [WebMethod(Description = "Listar escuelas")]
-        public string[] Agregar(string codEscuela, string Escuela)
-        {
-            Escuela escuela = new Escuela();
-            return escuela.Agregar(codEscuela, Escuela);
+        [WebMethod(Description = "Agregar paciente")]
+        public string[] Agregar(string idP, string nombre, string apellidos
+                                    , string fechaNacimiento, string sexo, string estadoCivil
+                                    , string ocupacion, string direccion, string telefono)
+        { PacienteE paciente = new PacienteE();
+            Paciente pacientee = new Paciente();
+            return pacientee.Agregar(idP, nombre, apellidos
+                                    , fechaNacimiento, sexo, estadoCivil
+                                    , ocupacion, direccion, telefono);
         }
-
+       
+        /*
+         
         [WebMethod(Description = "Listar escuelas")]
         public string[] Actualizar(string codEscuela, string Escuela)
         {
             Escuela escuela = new Escuela();
             return escuela.Actualizar(codEscuela, Escuela);
         }
+        */
+
 
     }
 }

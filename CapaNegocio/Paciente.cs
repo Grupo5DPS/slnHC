@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CapaDatos;
+using CapaEntidad;
+
 namespace CapaNegocio
 {
     public class Paciente : Interfaces.IPaciente
@@ -20,19 +22,25 @@ namespace CapaNegocio
                 return mensaje;
             }
         }
-        public string[] Actualizar(string codEscuela, string Escuela)
+
+        public string[] Actualizar(Paciente paciente)
         {
-            DataRow fila = datos.TraerDataRow("spActualizarEscuela", codEscuela, Escuela);
-            //traer el codigo de error y el mensaje
-            byte codError = Convert.ToByte(fila["CodError"]);
-            mensaje = fila["Mensaje"].ToString();
-            string[] aea = { mensaje, codError.ToString() };
-            return aea;
+            throw new NotImplementedException();
         }
 
-        public string[] Agregar(string codEscuela, string escuela)
+        //public string[] Agregar(PacienteE paciente 
+        public string[] Agregar(string idP, string nombre, string apellidos, 
+                      string fechaNacimiento, string sexo, string estadoCivil, 
+                    string ocupacion, string direccion, string telefono)
         {
-            DataRow fila = datos.TraerDataRow("spAgregarEscuela", codEscuela, escuela);
+            //DataRow fila = datos.TraerDataRow("spAgregarPaciente", paciente.idP, paciente.nombre, paciente.apellidos
+            //                        , paciente.fechaNacimiento, paciente.sexo, paciente.estadoCivil
+            //                        , paciente.ocupacion, paciente.direccion, paciente.telefono);
+
+            DataRow fila = datos.TraerDataRow("spAgregarPaciente", idP, nombre, apellidos
+                                    , fechaNacimiento, sexo, estadoCivil
+                                    , ocupacion, direccion, telefono);
+
             //traer el codigo de error y el mensaje
             byte codError = Convert.ToByte(fila["CodError"]);
 
@@ -43,21 +51,13 @@ namespace CapaNegocio
 
         public DataSet buscar(string texto, string criterio)
         {
-            return datos.TraerDataSet("spBuscarEscuela", texto, criterio);
+            throw new NotImplementedException();
         }
 
-        public string[] Eliminar(string codEscuela)
+        public string[] Eliminar(Paciente paciente)
         {
-            DataRow fila = datos.TraerDataRow("spEliminarEscuela", codEscuela);
-            //traer el codigo de error y el mensaje
-            byte codError = Convert.ToByte(fila["CodError"]);
-            mensaje = fila["Mensaje"].ToString();
-            string[] aea = { mensaje, codError.ToString() };
-            return aea;
+            throw new NotImplementedException();
         }
-
-
-
 
         public DataSet Listar()
         {
