@@ -42,7 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Escuela.cs" />
+    <Compile Include="Historia.cs" />
     <Compile Include="Interfaces\IEscuela.cs" />
+    <Compile Include="Interfaces\IHistoria.cs" />
     <Compile Include="Interfaces\IPaciente.cs" />
     <Compile Include="Paciente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
